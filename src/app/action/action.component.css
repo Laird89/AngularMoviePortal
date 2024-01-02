@@ -1,0 +1,41 @@
+#title{
+    padding-top: 10px;
+    padding-left: 20px;  
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: #232931;
+}
+
+#movie-info{
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom: 20px;
+}
+
+#movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 90vh;
+}
+
+#movieItems{
+    padding:10px;
+    flex: 0 0 calc(33.33% - 20px); 
+    margin: 10px;
+    max-width: 300px;
+}
+
+.movieItems img {
+    height: 450px; 
+    width: auto; 
+}
+
+@media (max-width: 768px) {
+    .movieItems {
+        flex-basis: calc(75% - 20px);
+        margin: 10px 0; 
+    }
+}
